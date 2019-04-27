@@ -136,3 +136,19 @@ body {font-size: 1.4em; color: #333;}
 .tool-eraser {
   background: url('../img/tool_eraser.svg') no-repeat top left / 40px 40px;
 }
+
+
+.link {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 12px;
+}
+
+.link a {
+  height: 50px;
+  line-height: 50px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+}

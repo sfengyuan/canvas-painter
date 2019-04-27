@@ -48,18 +48,15 @@ function trackDrag (onMove, onEnd = e => {}) {
 }
 
 function bindDown (el = window, onDown) {
-  let flag = false
+  let type = ''
   // avoid touch and click fired at the same time
   function down (e) {
-    console.log('flag', flag)
-    console.log('type', e.type)
-    if (e.type === 'touchstart') {
-      onDown(e)
-      flag = true
-    } else if (e.type === 'mousedown' && flag === false) {
+    if (!type) {
+      type = e.type
+    }
+    if (e.type === type) {
       onDown(e)
     }
-    flag = false
   }
   el.addEventListener('mousedown', down)
   el.addEventListener('touchstart', down)
