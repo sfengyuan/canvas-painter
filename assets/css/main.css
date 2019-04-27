@@ -1,0 +1,138 @@
+body, ul, li {padding: 0; margin: 0; color: rgb(74, 74, 74);}
+button {border: none; background: none; outline: none; padding: 0;}
+input { outline: none; }
+li { list-style-type: none; }
+body {font-size: 1.4em; color: #333;}
+
+
+
+.menu button, .menu input, .property-bar input, .toolbar .btn {
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn:hover { cursor: pointer; }
+.toolbar {
+  position: absolute;
+  top: 110px;
+  left: 10px;
+ }
+
+.toolbar li:last-child {border: none;}
+
+.toolbar .btn {
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+}
+
+.toolbar .btn:hover {
+  color: rgb(10, 10, 10);
+}
+.text-field {
+  border: none;
+}
+
+.menu, .property-bar {
+  overflow: hidden;
+  border-bottom: 2px solid #333;
+}
+.menu-item, .color-control, .range-control {
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  margin-right: 10px;
+  transition: transform .5s ease;
+}
+
+.length-range.hide {
+  transform: translateY(-100px);
+}
+.menu-item:first-child, .property-bar div.color-control {
+  margin-left: 10px;
+}
+.input-file {
+  width: 70px;
+}
+.btn-undo {
+  margin-right: 10px;
+}
+.property-bar {
+  border-bottom: none;
+}
+.color-input {
+  border: none;
+  padding: 0;
+  background: rgb(144, 144, 144);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.range-output {
+  font-size: 10px;
+  vertical-align: top;
+}
+
+[data-brushsize="1"] {
+  cursor: url('../img/cursor1.svg') 1 1, pointer;
+}
+[data-brushsize="2"] {
+  cursor: url('../img/cursor2.svg') 1 1, pointer;
+}
+[data-brushsize="3"] {
+  cursor: url('../img/cursor3.svg') 1 1, pointer;
+}
+[data-brushsize="4"] {
+  cursor: url('../img/cursor4.svg') 2 2, pointer;
+}
+[data-brushsize="5"] {
+  cursor: url('../img/cursor5.svg') 2 2, pointer;
+}
+[data-brushsize="6"] {
+  cursor: url('../img/cursor6.svg') 3 3, pointer;
+}
+[data-brushsize="7"] {
+  cursor: url('../img/cursor7.svg') 4 4, pointer;
+}
+[data-brushsize="8"] {
+  cursor: url('../img/cursor8.svg') 4 4, pointer;
+}
+[data-brushsize="9"] {
+  cursor: url('../img/cursor9.svg') 4 4, pointer;
+}
+[data-brushsize="10"] {
+  cursor: url('../img/cursor10.svg') 5 5, pointer;
+}
+[data-tool="text"] {
+  cursor: text;
+}
+
+/* .tool-pencil::after {
+  content: url('../img/tool_pen.svg');
+  display: block;
+  width: 40px;
+  height: 40px;
+} */
+.tool-pencil {
+  background: url('../img/tool_pencil.svg') no-repeat top left / 40px 40px;
+}
+.tool-fence {
+  background: url('../img/tool_fence.svg') no-repeat top left / 40px 40px;
+}
+.tool-strips {
+  background: url('../img/tool_strips.svg') no-repeat top left / 40px 40px;
+}
+.tool-hatching {
+  background: url('../img/tool_hatching.svg') no-repeat top left / 40px 40px;
+}
+.tool-sprayer {
+  background: url('../img/tool_sprayer.svg') no-repeat top left / 40px 40px;
+}
+.tool-radial {
+  background: url('../img/tool_radial.svg') no-repeat top left / 40px 40px;
+}
+.tool-text {
+  background: url('../img/tool_text.svg') no-repeat top left / 40px 40px;
+}
+.tool-eraser {
+  background: url('../img/tool_eraser.svg') no-repeat top left / 40px 40px;
+}
